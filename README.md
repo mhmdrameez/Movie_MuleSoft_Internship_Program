@@ -12,6 +12,6 @@ Schema:
 	PRIMARY KEY("name")
   );
   
-  #Table
+  # Table
  ![Table](https://github.com/mhmdrameez/Movie_MuleSoft_Internship_Program/blob/main/Table.PNG)
 
