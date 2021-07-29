@@ -6,16 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- *
- * @author sqlitetutorial.net
- */
 public class SelectApp {
-
-    /**
-     * Connect to the test.db database
-     * @return the Connection object
-     */
     private Connection connect() {
         // SQLite connection string
         String url = "jdbc:sqlite:C:/sql/movies.db";
@@ -28,10 +19,6 @@ public class SelectApp {
         return conn;
     }
 
-    
-    /**
-     * select all rows in the warehouses table
-     */
     public void selectAll(){
         String sql = "SELECT name,actor,actress,director,year FROM movies";
         
