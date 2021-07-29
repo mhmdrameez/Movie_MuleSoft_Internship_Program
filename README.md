@@ -12,6 +12,8 @@ Schema:
 	PRIMARY KEY("name")
   );
   
+  https://github.com/mhmdrameez/Movie_MuleSoft_Internship_Program/blob/main/Table.PNG
+  
   
   
   
