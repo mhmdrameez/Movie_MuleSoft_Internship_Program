@@ -12,11 +12,11 @@ Schema:
 	PRIMARY KEY("name")
   );
   
-![Schema](https://github.com/mhmdrameez/Movie_MuleSoft_Internship_Program/blob/main/schema.PNG)
+![Schema](https://github.com/mhmdrameez/movie_temp_table/blob/45f29a3bf4ea707a8be3499653ce8a6374c8b27a/schema.PNG)
   
   # Table
- ![Table](https://github.com/mhmdrameez/Movie_MuleSoft_Internship_Program/blob/main/Table.PNG)
+ ![Table](https://github.com/mhmdrameez/movie_temp_table/blob/78bb7f2ee8d66a92b4307182d4c524a6306cd197/Table.PNG)
 
 
 
- ![Table](https://github.com/mhmdrameez/Movie_MuleSoft_Internship_Program/blob/main/selecttable..PNG)
+ ![Table](https://github.com/mhmdrameez/movie_temp_table/blob/ce8841e4d7158874edbc74b94843212a7317e455/selecttable..PNG)
