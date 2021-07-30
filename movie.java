@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;  
 import java.awt.event.*;
 
-public class SelectApp extends JFrame implements ActionListener{
+public class movie extends JFrame implements ActionListener{
     JLabel JL_actor,JL_actress,JL_year,JL_movie,JL_director;
     JTextField JT_actor,JT_actress,JT_year,JT_movie,JT_director;
     JButton btn_search;
@@ -77,7 +77,7 @@ public class SelectApp extends JFrame implements ActionListener{
         PreparedStatement ps = null;
         public ResultSet find(String s){
             try{
-                 String url = "jdbc:sqlite:C:/sqlite/database.db";  
+                 String url = "jdbc:sqlite:C:/sqlite/movies.db";  
                   conn = DriverManager.getConnection(url); 
                   System.out.println("Connection to SQLite has been established."); 
             }catch(Exception ex){
