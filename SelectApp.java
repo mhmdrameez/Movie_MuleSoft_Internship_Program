@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.sql.*;
 import java.awt.event.*;
 
-public class Work extends JFrame implements ActionListener{
+public class SelectApp extends JFrame implements ActionListener{
     JLabel JL_actor,JL_actress,JL_year,JL_movie,JL_director;
     JTextField JT_actor,JT_actress,JT_year,JT_movie,JT_director;
     JButton btn_search;
