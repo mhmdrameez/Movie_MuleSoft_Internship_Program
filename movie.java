@@ -76,9 +76,9 @@ public class movie extends JFrame implements ActionListener{
                 JT_actor.setText(rs.getString("actor"));
                 JT_actress.setText(rs.getString("actress"));
                 JT_year.setText(rs.getString("year"));
-                JT_year.setText(rs.getString("year"));
+                JT_director.setText(rs.getString("director"));
             }  else{
-                JOptionPane.showMessageDialog(null, "NO DATA FOR THIS ID");
+                JOptionPane.showMessageDialog(null, "NO DATA FOUND");
             }
         }catch(Exception ex){
             JOptionPane.showMessageDialog(null, ex.getMessage());
