@@ -90,7 +90,7 @@ public class movie extends JFrame implements ActionListener{
 
 
     public static void main(String[] args){
-        new Work();
+        new movie();
     }
 
 }
