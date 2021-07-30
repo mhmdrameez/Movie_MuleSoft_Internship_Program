@@ -11,7 +11,7 @@ public class movie extends JFrame implements ActionListener{
     JButton btn_search;
 
 
-    public Work(){
+    public movie(){
         super("Search movies");
         JL_movie = new JLabel("Enter movie name:");
         JL_movie.setBounds(20, 20, 200, 20);
