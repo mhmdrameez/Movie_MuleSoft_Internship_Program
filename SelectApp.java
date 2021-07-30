@@ -1,6 +1,8 @@
 package JavaDB_001;
 import javax.swing.*;
-import java.sql.*;
+import java.sql.Connection;  
+import java.sql.DriverManager;  
+import java.sql.SQLException;  
 import java.awt.event.*;
 
 public class SelectApp extends JFrame implements ActionListener{
@@ -75,12 +77,11 @@ public class SelectApp extends JFrame implements ActionListener{
         PreparedStatement ps = null;
         public ResultSet find(String s){
             try{
-                con = DriverManager.getConnection(""jdbc:sqlite:C:/sql/movies.db","root","");
-                ps = con.prepareStatement("select * from users where id = ?");
-                ps.setString(1,s);
-                rs = ps.executeQuery();
+                 String url = "jdbc:sqlite:C:/sqlite/database.db";  
+                  conn = DriverManager.getConnection(url); 
+                  System.out.println("Connection to SQLite has been established."); 
             }catch(Exception ex){
-                JOptionPane.showMessageDialog(null, ex.getMessage());
+                System.out.println(e.getMessage()); 
             }
             return rs;
         }
