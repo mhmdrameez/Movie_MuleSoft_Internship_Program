@@ -90,12 +90,11 @@ public class movie extends JFrame implements ActionListener{
         PreparedStatement ps = null;
         public ResultSet find(String s){
             try{
-                con = DriverManager.getConnection("jdbc:mysql://localhost/test_db","root","");
-                ps = con.prepareStatement("select * from users where id = ?");
-                ps.setString(1,s);
-                rs = ps.executeQuery();
-            }catch(Exception ex){
-                JOptionPane.showMessageDialog(null, ex.getMessage());
+                 Class.forName("org.sqlite.JDBC");
+                con = DriverManager.getConnection("jdbc:sqlite:C://sqlite/movies.db");
+            }catch(Exception e){
+                System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+                System.exit(0);
             }
             return rs;
         }
